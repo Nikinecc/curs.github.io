@@ -1,0 +1,652 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth
+}
+
+@font-face {
+    font-family: "GraphikLCGSemiBold";
+    src: url("fonts/GraphikLCG-Semibold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "GraphikLCGRegular";
+    src: url("fonts/GraphikLCGRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    font-family: "GraphikLCGRegular";
+}
+
+/* сам хедер */
+.header {
+    background-image: url(img/bg.png);
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 130px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-man {
+    display: none;
+}
+
+/* для главной линии */
+.header-line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* информация */
+.line-iteminfo-holder {
+    margin-right: 45px;
+}
+
+.line-iteminfo-holder a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    transition: all linear .1s;
+}
+
+.line-iteminfo-holder a:hover {
+    border-bottom: 2px solid #cabb0d;
+}
+
+/* блок с телефоном */
+.header-phone {
+    display: flex;
+    align-items: center;
+    background: rgb(119, 79, 35);
+    background: linear-gradient(0deg, rgba(119, 79, 35, 1) 3%, rgba(252, 251, 0, 1) 100%);
+    border-radius: 50px;
+    padding: 9px 16px;
+    color: white;
+    font-family: "GraphikLCGSemiBold";
+    margin-right: 27px;
+}
+
+.ph-logo {
+    margin-right: 15px;
+}
+
+#tg-head {
+    margin-right: 27px;
+}
+
+/* блок инфо-хедэр */
+.header-info {
+    display: flex;
+}
+
+.man {
+    margin-right: 35px;
+    width: 100%;
+}
+
+.man img {
+    width: 100%;
+}
+
+/* блок в хэдэре */
+.block-info {
+    padding: 25px 25px;
+    text-align: center;
+    margin-top: 70px;
+    border: 2px solid #7c5b1d;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+.header-title {
+    font-family: "GraphikLCGSemiBold";
+    color: #fece00;
+    font-size: 30px;
+    margin-bottom: 55px;
+}
+
+.header-title span {
+    font-size: 45px;
+}
+
+.header-subtitle {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.header-subtitle span {
+    font-size: 30px;
+}
+
+.header-img {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* стили для кнопки */
+.button-s {
+    font-family: "GraphikLCGSemiBold";
+    background-color: #550f5e;
+    color: white;
+    font-size: 30px;
+    padding: 4px 4px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button-text {
+    margin-right: 10px;
+}
+
+.button-info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 25px 25px;
+}
+
+/* галки в хэдере */
+.header-about {
+    color: white;
+    margin-left: 75px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+.h-about-title {
+    font-family: "GraphikLCGSemiBold";
+    font-size: 50px;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.h-about-title span {
+    color: #940ab9;
+}
+
+.h-about-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-about {
+    display: flex;
+    align-items: center;
+}
+.h-about-title.head{
+    text-align: center;
+}
+#china{
+    color: #fece00;
+}
+.h-about-logo {
+    margin-right: 30px;
+}
+
+.h-about {
+    margin-bottom: 30px;
+}
+
+.h-about-text {
+    max-width: 615px;
+    font-size: 20px
+}
+
+/* основная часть */
+.container {
+    padding-left: 235px;
+    padding-right: 235px;
+}
+
+.for {
+    margin-bottom: 120px;
+}
+
+.for-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.for-item {
+    text-align: center;
+    max-width: 385px;
+}
+
+.for-img {
+    margin-bottom: 20px;
+}
+
+.for-img img {
+    width: 232px;
+}
+
+.for-name {
+    font-family: "GraphikLCGSemiBold";
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.for-subtitle {
+    font-size: 25px;
+    color: #808080;
+}
+
+.button-s.main-btn {
+    background-color: #940ab9;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.img-video {
+    margin-bottom: 45px;
+    
+}
+
+.img-video iframe {
+    width: 100%;
+    height: 840px;
+}
+
+.video {
+    margin-bottom: 95px;
+}
+
+/* блок с отзывами */
+.rew-holder {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.rew-item {
+    max-width: 335px;
+    margin-right: 50px;
+    text-align: center ;
+}
+
+.rew-untitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rew-stars {
+    margin-right: 16px;
+}
+
+.rew-play {
+    margin-right: 10px;
+}
+
+.rew-text span {
+    font-family: "GraphikLCGSemiBold";
+    font-size: 25px;
+}
+
+.rew-holder:last-child {
+    margin-right: 0px;
+}
+
+/* инфо блок */
+.info {
+    margin-top: 190px;
+    margin-bottom: 80px;
+}
+
+.info-block {
+    background-color: #f8f0fc;
+    border-radius: 50px;
+    padding: 40px 45px;
+}
+
+.block-title {
+    display: flex;
+    font-family: "GraphikLCGSemiBold";
+    color: #940ab9;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.block-title-img {
+    margin-right: 10px;
+}
+
+.block-title-img img {
+    width: 45px
+}
+
+.info-row img {
+    width: 50%;
+}
+
+.info-row {
+    transform: rotate(90deg);
+    width: 45px;
+    margin: 0 auto;
+}
+
+.info-row-box {
+    position: relative;
+}
+.info-item{
+    margin-top: -35px;
+}
+.info-item:first-child {
+    margin-top: 15px;
+}
+.info-row-box:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 17px;
+}
+
+.info-holder {
+    margin-bottom: 40px;
+}
+
+.life {
+    width: 100%;
+}
+
+.life-img {
+    margin-bottom: 65px;
+}
+
+.life-img img {
+    width: 100%;
+}
+#life-2{
+    display: none;
+}
+/* футер */
+.footer {
+    margin-top: 80px;
+    padding: 55px 0px;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-dogov {
+    display: flex;
+}
+
+.dog,
+#tg-footer {
+    margin-right: 10px;
+}
+
+.footer-dogov a {
+    color: white;
+}
+
+.swiper {
+    width: 425px;
+    height: 375px;
+    text-align: center;
+    display: none;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 0px);
+    left: auto;
+}
+
+/* адаптация */
+@media(max-width:1500px) {
+    .header-subtitle {
+        font-size: 35px;
+    }
+
+    .header {
+        padding-right: 100px;
+    }
+
+    .button-text {
+        font-size: 20px;
+    }
+
+    .for-name {
+        font-size: 20px;
+    }
+
+    .for-item{
+        margin-right: 30px;
+    }
+    .for-item:last-child{
+        margin-right: 0px;
+    }
+    .rew-item {
+        max-width: 100%;
+        margin-right: 50px;
+    }
+
+}
+@media(max-width:1380px){
+    .h-about-title {
+        text-align: center;
+    }
+}
+@media(max-width:1300px) {
+    .header-img img {
+        height: 35px;
+    }
+
+    .header-subtitle {
+        font-size: 25px;
+    }
+
+    .for-img img {
+        width: 150px;
+    }
+    .rew-untitle {
+        display: flex;
+        justify-content: center;
+    }
+    .rew-holder{
+        flex-direction: column;
+        text-align: center;
+    }
+    .rew-item{
+        margin-bottom: 20px;
+    }
+    .for-holder {
+        flex-direction: column;
+    }
+    .for-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:1100px) {
+    .header-man {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .header-man img {
+        width: 500px;
+    }
+
+    .man {
+        display: none;
+    }
+
+    .header {
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-info {
+        margin: 0 auto;
+    }
+
+    .header-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width:900px) {
+    .header-line {
+        display: none;
+    }
+    .for-item {
+        margin-right: 0px;
+    }
+    .h-about-holder {
+        flex-direction: column;
+    }
+    .header {
+        background-image: url(img/bg-mob.png);
+        margin-bottom: 40px;
+    }
+    .header-about {
+        margin-left: 0px;
+    }
+    .button-info {
+        padding: 18px 9px;
+    }
+    .button-s.main-btn {
+        width: 70%;
+    }
+    .button-text {
+        font-size: 20px;
+    }
+    .swiper {
+        display: block;
+    }
+    .rew-holder {
+        display: none;
+    }
+    .block-info{
+        margin-top: 0px;
+    }
+    .rew-item{
+        margin-right: 0px;
+    }
+    .img-video iframe {
+        height: 500px;
+    }
+}
+
+@media(max-width:630px) {
+    .button-text.head{
+        font-size: 15px;
+    }
+    .button-info img{
+        width: 10px;
+    }
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media(max-width:585px) {
+    .header-img img {
+        height: 30px;
+    }
+
+    .header-man img {
+        width: 370px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .h-about-title {
+        font-size: 30px;
+    }
+    .for {
+        margin-bottom: 50px;
+    }
+    .for-holder {
+        margin-bottom: 40px;
+    }
+    .info {
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    .footer-logo,.footer-dogov,.footer-info{
+        margin-bottom: 20px;
+    }
+    .footer-logo img{
+        width: 100px;
+    }
+}
+
+@media(max-width:451px) {
+    .swiper {
+        width: 297px;
+        height: 428px;
+    }
+
+    .header-title span {
+        font-size: 20px;
+    }
+
+    .header-title {
+        font-size: 15px;
+    }
+
+    .header-img img {
+        height: 25px;
+    }
+
+    .header-man img {
+        width: 285px;
+    }
+    #life-2{
+        display: block;
+    }
+    #life-1{
+        display: none;
+    }
+    .dog{
+        font-size: 10px;
+    }
+    .for-item {
+        padding: 0px 30px;
+    }
+}
+@media(max-width:380px){
+    .header-img img {
+        height: 20px;
+    }
+}
